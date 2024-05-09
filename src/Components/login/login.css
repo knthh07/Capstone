@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loginPage {
+    min-height: 100vh; /* Use min-height to prevent compression */
+    display: flex;
+}
+
+.leftSide {
+    flex: 1; /* Use flex to fill remaining space */
+    background-image: url("../../assets/img/jhocsonPic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rightSide {
+    border-right: 15px solid #FFD700;
+    background-color: #403993;
+    flex-direction: column;
+    width: 30%;
+    display: flex;
+}
+
+.loginForm {
+    margin: auto;
+}
+
+#loginForm, #signupForm {
+    padding: 20px 30px;
+    border-radius: 30px;
+    background-color: #313A7B;
+    margin-top: -10%;
+}
+
+.loginForm h2, .signupForm h1 {
+    text-decoration: underline;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5%;
+}
+
+.loginForm h1 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.loginForm label {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginFields {
+    margin-top: 15%;
+}
+
+.loginFields div, .signupFields div {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginFields input, .signupFields input {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+#input {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#signup, #login {
+    color: #FFD700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 10%;
+}
+
+p {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 10%;
+}
+
+#showPasswordbox {
+    display: flex;
+    position: absolute;
+    top: 50%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+}
+
+#forgot {
+    position: relative;
+    background: none;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.993);
+    justify-content: end;
+    margin: 0.9rem 0.9rem 0;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+
+.buttonLogin {
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    outline: none;
+    outline: 0;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.buttonLogin:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .rightSide {
+        width: 40%; /* Adjust width for larger screens */
+    }
+
+    .loginFields input, .signupFields input {
+        width: calc(100% - 20px); /* Adjust input width to account for padding */
+    }
+
+    .buttonLogin {
+        padding: 10px 30px;
+    }
+}
+
+.signupPage {
+    min-height: 100vh; /* Use min-height to prevent compression */
+    display: flex;
+    background-color: #403993;
+    flex-direction: column;
+}
+
+.signupForm {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nuLogo {
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 30%;
+    margin-top: 1%;
+}
