@@ -18,7 +18,7 @@ function UserSideNav() {
         <img src={logo} alt={'NU LOGO'}></img>
       </div>
       <nav className='usernavlinks'>
-        <Link to="/user_ticket">Tickets</Link>
+        <Link to="/user_ticket">Ticket</Link>
         <Link to="/user_profile">Profile</Link>
       </nav>
 
